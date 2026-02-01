@@ -19,7 +19,7 @@ namespace Tourism.Application.Services
             _repository = repository;
         }
 
-        public async Task<int> CriarAsync(PontoTuristicoDto dto)
+        public async Task<int> CriarAsync(CreatePontoTuristicoDto dto)
         {
             var ponto = new PontoTuristico(
                 dto.Nome,

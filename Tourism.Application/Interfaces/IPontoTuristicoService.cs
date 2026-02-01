@@ -9,7 +9,7 @@ namespace Tourism.Application.Interfaces
 {
     public interface IPontoTuristicoService
     {
-        Task<int> CriarAsync(PontoTuristicoDto dto);
+        Task<int> CriarAsync(CreatePontoTuristicoDto dto);
         Task<PontoTuristicoDto?> ObterPorIdAsync(int id);
         Task<PaginacaoResult<PontoTuristicoDto>> ListarAsync(
             int pagina,
